@@ -199,7 +199,7 @@ ${TCP_USER_TIMEOUT:+tcp_user_timeout = ${TCP_USER_TIMEOUT}\n}\
   cat "${PG_CONFIG_FILE}"
 fi
 
-echo "Starting darkhttpd..."
-nohup darkhttpd /www --port 8000 &
+#echo "Starting darkhttpd..."
+#nohup darkhttpd /www --port 8000 &
 echo "Starting $*..."
 exec "$@"
