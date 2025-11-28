@@ -200,6 +200,6 @@ ${TCP_USER_TIMEOUT:+tcp_user_timeout = ${TCP_USER_TIMEOUT}\n}\
 fi
 
 echo "Starting darkhttpd..."
-exec "darkhttpd /www --port 8000 &"
+nohup darkhttpd /www --port 8000 &
 echo "Starting $*..."
 exec "$@"
